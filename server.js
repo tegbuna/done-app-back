@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 // configure settings app.set()
-
+//order is critical to database access
 require('dotenv').config();
 require('./config/database');
 
