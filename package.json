@@ -6,7 +6,7 @@
     "mongoose": "^5.12.3",
     "morgan": "^1.10.0"
   },
-  "name": "Done-Back",
+  "name": "done-back",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {

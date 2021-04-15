@@ -8,3 +8,4 @@ const choreSchema = new Schema(
   { timestamps: true }
 );
 module.exports = mongoose.model(“Chore”, choreSchema);
+
