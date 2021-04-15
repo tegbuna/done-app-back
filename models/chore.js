@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const choreSchema = new Schema({
     chore: String,
-    status: Boolean,
+    status: String,
 }, { timestamps: true });
 
 
