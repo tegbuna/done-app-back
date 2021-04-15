@@ -1,14 +1,13 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const connectionURI = process.env.DATABASE_URI;
+// shortcut to mongoose.connection object
 const db = mongoose.connection;
-
-mongoose.connect(process.env.DB_CONNECTION, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
+mongoose.connect(connectionURI, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
 });
-
-
-db.on('connected', function() {
-    console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
+db.on("connected", function () {
+  console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
 });
